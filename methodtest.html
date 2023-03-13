@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Posts</title>
+        <script type="module" src="mtest.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="methodSelect">
+            <button>Get</button>
+            <button>Delete</button>
+            <button>Post</button>
+            <button>Put</button>
+        </div>
+    
+        <p id="title"></p>
+        <form id="submit_form">
+
+            <div id="idInput">
+                <label for="articleID">ID: </label>
+                <input type="number"name="articleID"id="articleID"min="0"/>
+            </div>
+            
+            <div id="nameInput">
+                <label for="articleName">Article Name: </label>
+                <input type="text" name="articleName" id="articleName" />
+            </div>
+    
+            <div id="bodyInput">
+                <label for="articleBody">Article Body: </label>
+                <input type="text"name="articleBody"id="articleBody"/>
+            </div>
+    
+            <div id="dateInput">
+                <label for="articleDate">Article Date: </label>
+                <input type="date"name="articleDate"id="articleDate"disabled/>
+            </div>
+            
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+        <div>
+            <output id="response"></output>
+            <style>                 
+                ul li {
+                    list-style: none;
+                    position: relative;
+                    padding: 3px 0 2px 25px;
+                    color: rebeccapurple;
+                }
+                
+                ul li::before { 
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                }
+            </style>
+        </div>
+    
+          
+    </body>
+</html>
+
