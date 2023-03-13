@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ClickCounterButton from "./ButtonCount";
 function App() {
